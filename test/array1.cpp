@@ -35,9 +35,10 @@ int main()
     std::cout << "elems:    ";
 
     // iterate through all elements
-    for (Array::const_iterator pos=a.begin(); pos<a.end(); ++pos) {
-        std::cout << *pos << ' ';
-    }
+//    for (Array::const_iterator pos=a.begin(); pos<a.end(); ++pos) {
+//        std::cout << *pos << ' ';
+//    }
+    std::copy(a.begin(), a.end(), std::ostream_iterator<float>(std::cout, " "));
     std::cout << std::endl;
 
     // check copy constructor and assignment operator

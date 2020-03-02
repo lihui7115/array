@@ -19,7 +19,8 @@ using namespace std;
 int main()
 {
     // create and initialize array
-    boost::array<int,10> a = { { 1, 2, 3, 4, 5 } };
+//    boost::array<int,10> a = { { 1, 2, 3, 4, 5 } };       // c++03
+    boost::array<int,10> a = { 1, 2, 3, 4, 5 };             // c++11
 
     print_elements(a);
 
